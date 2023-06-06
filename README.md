@@ -7,9 +7,9 @@
 conda activate
 ```
 <br>
-* conda create --prefix venv python==3.8 -y*
+``` conda create --prefix venv python==3.8 -y ```
 <br>
-* conda activate venv/*
+``` conda activate venv/ ```
 
 2. Install Requirements and setup
 
@@ -17,7 +17,7 @@ conda activate
 pip install -r requirements.txt
 ```
 <br>
-* python setup.py install *
+``` python setup.py install ```
 
 3. Time of Data Ingestion / Data Transformation / Data Processing
 
