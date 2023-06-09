@@ -1,0 +1,4 @@
+[ 2023-06-09 16:07:34,259 ] 25 root - INFO - Data Ingestion Mode START
+[ 2023-06-09 16:07:34,449 ] 31 root - INFO - Exported collection as dataframe
+[ 2023-06-09 16:07:34,460 ] 36 root - INFO - Raw Data is created
+[ 2023-06-09 16:07:34,461 ] 48 root - INFO - ERROR in DataIngestion Stage

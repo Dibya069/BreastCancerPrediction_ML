@@ -11,8 +11,12 @@ from pymongo import MongoClient
 def export_collection_as_dataframe(collection_name, db_name):
     try:
         mongo_client = MongoClient(os.getenv("mongodb+srv://mohanty:RAM@cluster0.1owxeev.mongodb.net/?retryWrites=true&w=majority"))
-
         collection = mongo_client[db_name][collection_name]
+
+        num_samples = collection.count_documents({})  # Count the number of documents in the collection
+        if num_samples == 0:
+            raise ValueError("The collection is empty. Please ensure there are samples in the collection.")
+        
 
         df = pd.DataFrame(list(collection.find()))
 
