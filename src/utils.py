@@ -13,6 +13,11 @@ def export_collection_as_dataframe(collection_name, db_name):
         mongo_client = MongoClient(os.getenv("mongodb+srv://mohanty:RAM@cluster0.1owxeev.mongodb.net/?retryWrites=true&w=majority"))
         collection = mongo_client[db_name][collection_name]
 
+        # Print debug information
+        print("Connection string:", mongo_client)
+        print("Database name:", db_name)
+        print("Collection name:", collection_name)
+
         num_samples = collection.count_documents({})  # Count the number of documents in the collection
         if num_samples == 0:
             raise ValueError("The collection is empty. Please ensure there are samples in the collection.")
