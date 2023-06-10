@@ -36,7 +36,7 @@ class ModelTrainig:
                 "Gradient Classification": GradientBoostingClassifier()
             }
 
-            model_report: dict = evaluate_mdoel(x_train, x_test, y_train, y_test)
+            model_report: dict = evaluate_mdoel(x_train, x_test, y_train, y_test, models)
             print("\n=======================================================================")
             logging.info(f"Model Reports: {model_report}")
 

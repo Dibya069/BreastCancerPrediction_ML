@@ -53,7 +53,7 @@ def save_obj(file_path, obj):
     
 ## ======================================================================================================================
 
-def evaluate_mdoel( x_train, y_train, x_test, y_test, models ):
+def evaluate_mdoel( x_train, x_test, y_train, y_test, models ):
     try:
         report = {}
         
