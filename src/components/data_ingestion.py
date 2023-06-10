@@ -21,6 +21,19 @@ class DataIngestion:
     def __init__(self):
         self.ingestion_configuration = DataIngestionConfig()
 
+    def get_data_outlier_settel(self, df, col_name):
+        try:
+            logging.info("Data_dealing with Outliers")
+            column = df[col_name]
+            z_scores = (column - column.mean()) / column.std()
+            return z_scores
+        
+        except Exception as e:
+            logging.info("Error Rasie from Data Ingestion (outlier) Stage")
+            raise CustomException(e, sys)
+        
+##=====================================================================================================================
+
     def initiate_data_ingestioin(self):
         logging.info("Data Ingestion Mode START")
 
@@ -34,6 +47,10 @@ class DataIngestion:
             os.makedirs( os.path.dirname(self.ingestion_configuration.raw_data_path), exist_ok=True)
             df.to_csv(self.ingestion_configuration.raw_data_path, index=False, header=True)
             logging.info("Raw Data is created")
+
+            df["mean area"] = self.get_data_outlier_settel(df, "mean area")
+            df["worst area"] = self.get_data_outlier_settel(df, "worst area")
+            logging.info("Outliers dealing Completed")
 
             train_set, test_set = train_test_split(df, test_size=0.3, random_state=42)
             train_set.to_csv( self.ingestion_configuration.train_data_path, index=False, header=True )
