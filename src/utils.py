@@ -10,7 +10,7 @@ from pymongo import MongoClient
 
 def export_collection_as_dataframe(collection_name, db_name):
     try:
-        mongo_client = MongoClient(os.getenv("mongodb+srv://mohanty:RAM@cluster0.1owxeev.mongodb.net/?retryWrites=true&w=majority"))
+        mongo_client = MongoClient("mongodb+srv://mohanty:RAM@cluster0.1owxeev.mongodb.net/?retryWrites=true&w=majority")
         collection = mongo_client[db_name][collection_name]
 
         # Print debug information
