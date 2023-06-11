@@ -1,0 +1,10 @@
+[ 2023-06-11 12:23:25,453 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-11 12:23:25,461 ] 186 werkzeug - INFO -  * Debugger PIN: 870-160-046
+[ 2023-06-11 12:23:36,867 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:23:36] "GET /predict HTTP/1.1" 200 -
+[ 2023-06-11 12:24:47,343 ] 27 root - INFO - Exception does in Prediction
+[ 2023-06-11 12:24:47,369 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:24:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-11 12:24:47,462 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:24:47] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:24:47,476 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:24:47] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:24:47,592 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:24:47] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:24:47,662 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:24:47] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:25:39,205 ] 186 werkzeug - INFO -  * Detected change in 'C:\\Users\\mohan\\Downloads\\Data_Science\\000. Projects\\BreastCanerPrediction\\src\\pipe\\predict_pipeline.py', reloading
