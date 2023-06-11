@@ -8,7 +8,7 @@
 <body>
     
     <h1>Data Form</h1>
-    <form action="/submit" method="post">
+    <form action="{{url_for('predict_datapoint')}}" method="POST">
         <label for="mean_radius">Mean Radius:</label>
         <input type="number" step="any" id="mean_radius" name="mean_radius" required><br>
 
