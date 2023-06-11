@@ -6,9 +6,6 @@ from src.logger import logging
 from src.exception import CustomException
 from src.utils import save_obj, load_object
 
-from dataclasses import dataclass
-
-@dataclass
 class PredictPipeline:
     def __init__(self):
         pass
@@ -32,12 +29,12 @@ class PredictPipeline:
         
     
 class CustomData:
-    def __init__(self):
-        pass
+    def __init__(self, **kwargs):
+        self.__dict__.update(kwargs)
 
     def get_data_as_dataframe(self):
         try:
-            pass
+            df = pd.DataFrame([self.__dict__])
         except Exception as e:
             logging.info("Exception does in Prediction Pipeline")
             raise CustomException(e, sys)
