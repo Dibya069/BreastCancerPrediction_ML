@@ -1,0 +1,3 @@
+[ 2023-06-11 12:04:29,811 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-11 12:04:29,820 ] 186 werkzeug - INFO -  * Debugger PIN: 870-160-046
+[ 2023-06-11 12:04:47,372 ] 186 werkzeug - INFO -  * Detected change in 'C:\\Users\\mohan\\Downloads\\Data_Science\\000. Projects\\BreastCanerPrediction\\application.py', reloading

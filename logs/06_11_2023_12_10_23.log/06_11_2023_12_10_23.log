@@ -1,0 +1,9 @@
+[ 2023-06-11 12:10:25,197 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-11 12:10:25,204 ] 186 werkzeug - INFO -  * Debugger PIN: 870-160-046
+[ 2023-06-11 12:10:25,248 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:10:25] "GET /predict HTTP/1.1" 200 -
+[ 2023-06-11 12:11:33,345 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:11:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-11 12:11:33,400 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:11:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:11:33,405 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:11:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:11:33,450 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:11:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:11:33,511 ] 186 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2023 12:11:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-11 12:12:32,182 ] 186 werkzeug - INFO -  * Detected change in 'C:\\Users\\mohan\\Downloads\\Data_Science\\000. Projects\\BreastCanerPrediction\\application.py', reloading
