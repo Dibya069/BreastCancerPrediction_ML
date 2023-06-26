@@ -28,5 +28,5 @@ python setup.py install
 3. Time of Data Ingestion / Data Transformation / Data Processing
 
 ```
-python -m src/pipe/train_pipeline
+python -m src.pipe.train_pipeline
 ```
