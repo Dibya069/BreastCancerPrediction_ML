@@ -15,8 +15,8 @@ class PredictionFileDetail:
     prediction_file_path:str = os.path.join(prediction_output_dirname,prediction_file_name)
 
 class PredictPipelines:
-    def __init__(self, request: request):
-        self.request = request
+    def __init__(self, **kwargs):
+        self.request = kwargs.get("request")
         self.prediction_file_detail = PredictionFileDetail()
 
 ## ======================================================================================================================
